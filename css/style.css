@@ -14,7 +14,7 @@
     --color-darkblue:   #13253B;
     --color-pink1-F9a:  #F9043629;
     --color-pink1-FFa:  #FF091129;
-    --color-red1-F3:    #FB3B64;
+    --color-red1-FB:    #FB3B64;
     --color-red2-EB:    #EB476E;
     --color-green-55:   #55DFB4;
     
@@ -97,13 +97,15 @@ header{
 .opener-section{
     width: 100%;
     height: 712px;
-    display: flex;
+    /* display: flex; */
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     position: relative;
     top: 70px;
-    
+    margin-bottom: 70px;
+    /* Po przesunięciu sekcji o 70px aby można było bar klikać iapózniej się zasłąniał następna sekcja zasłaniałą obecną wlatego dolny marginaes taki jak przesunięcie sekcji */
+
 }
 .opener-img{
     position: absolute;
@@ -136,4 +138,92 @@ header{
 }
 .opener-link:hover{
     background-color: var(--color-darkblue);
+}
+
+.stats {
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--color-back-white);
+    position: relative;
+    
+    
+}
+.stats-h2{
+    color: var(--color-black);
+    font-family: var(--ff-Ra);
+    font-weight: var(--fw-Regular);
+    font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.stats-cards_all{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+.stats-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    max-width: 176px;
+    height: 100%;
+}
+
+.stats-icon{
+    align-self: last baseline;
+    z-index: 1;
+    transform: translate(0, calc(-50% + 31px));
+    position: absolute;
+}
+
+.stats-cards-one::before{
+    content: "";
+    display: flex;
+    width: 63px;
+    height: 63px;
+    background-color: var(--color-red1-FB); 
+    border-radius: var(--radius-circle);
+    position: absolute;
+    top: 0px;
+}
+
+.stats-cards-two::before{
+    content: "";
+    display: block;
+    width: 63px;
+    height: 63px;
+    background-color: var(--color-blue3-08); 
+    border-radius: var(--radius-circle);
+    position: absolute;
+    top: 0px;
+}
+
+.stats-cards-three::before{
+    content: "";
+    display: block;
+    width: 63px;
+    height: 63px;
+    background-color: var(--color-green-55); 
+    border-radius: var(--radius-circle);
+    position: absolute;
+    top:0px;
+}
+
+.stats-h3{
+    color: var(--color-black);
+    font-family: var(--ff-Ra);
+    font-weight: var(--fw-ExtraBold);
+    font-size: 20px;
+    margin-top: 77px;
+}
+.stats-name{
+    max-width: 100px;
+    margin-top: 19px;
+    display: block;
+    text-align:center;
+
+    
 }
