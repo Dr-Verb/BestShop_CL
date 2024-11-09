@@ -1,0 +1,45 @@
+:root{
+    /* KOLORKI */
+    --color-back-white: #ffffff;
+    --color-blac:       #000000;
+    --color-grey1-F7:   #f7f7f7;
+    --color-grey2-E8:   #E8E9ED;
+    --color-grey3-00a:  #00000029;
+    --color-grey4-A5:   #A5A5A5;
+    --color-grey5-95:   #95989A;
+    --color-grey6-70:   #707070;
+    --color-blue1-07:   #07ACE6;
+    --color-blue2-07a:  #07ACE629;
+    --color-blue3-08:   #08A6E4;
+    --color-darkblue:   #13253B;
+    --color-pink1-F9a:  #F9043629;
+    --color-pink1-FFa:  #FF091129;
+    --color-red1-F3:    #FB3B64;
+    --color-red2-EB:    #EB476E;
+    --color-green-55:   #55DFB4;
+    
+    /* Czcionki Google Fonts*/
+    --ff-OS: "Open Sans", serif;
+    --ff-Ra: "Raleway", sans-serif;
+    --fw-Light:   300;
+    --fw-Regular:   400;
+    --fw-SemiBold:   600;
+    --fw-Bold:   700;
+    --fw-ExtraBold:   800;
+
+    /* Ozdobniki inne */
+    --radius-main: 5px;
+    --radius-circle: 50%;
+    --radius-cards: 18px;
+    --radius-cards_button: 23px;
+
+
+
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--ff-OS);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
