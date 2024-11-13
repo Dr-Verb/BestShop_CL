@@ -354,3 +354,118 @@ header{
     z-index: 0;
     
 }
+/* SEKCJA Pricing */
+.pricing-dev{
+    max-width: 1266px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.pricing-h2{
+    color: var(--color-black);
+    font-family: var(--ff-Ra);
+    font-weight: var(--fw-Regular);
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+.cards{
+    gap: 60px;
+}
+
+.card{
+    background-color: var(--color-back-white);
+    width: 100%;
+    /* height: 1200px; */
+    border: 1px solid var(--color-red1-FB);
+    border-radius: var(--radius-cards);
+
+    text-align: center;
+}
+.card-2{
+    transform: scale(1.05);
+    border-color: var(--color-blue1-07);
+    box-shadow: 5px 10px 27px var(--color-blue2-07a);
+}
+.card-3{border-color: var(--color-green-55);}
+
+.card-h3{
+    color: var(--color-darkblue);
+    font-family: var(--ff-Ra);
+    font-weight: var(--fw-Bold);
+    font-size: 20px;
+    margin-top: 34px;
+    margin-bottom: 14px;
+}
+.card-1-span, .card-2-span,.card-3-span{
+    /* color: var(--color-darkblue); */
+    font-family: var(--ff-OS);
+    font-weight: var(--fw-Light);
+    font-size: 46px;
+    color: var(--color-red1-FB);
+}
+.card-2-span{color: var(--color-blue1-07);}
+.card-3-span{color: var(--color-green-55);}
+.card-h4{
+    color: var(--color-darkblue);
+    font-family: var(--ff-Ra);
+    font-weight: var(--fw-Bold);
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.card li{
+    color: var(--color-black);
+    font-family: var(--ff-OS);
+    font-weight: var(--fw-Regular);
+    font-size: 14px;
+    margin: 10px;
+}
+.card a{
+    color: var(--color-back-white);
+    font-family: var(--ff-OS);
+    font-weight: var(--fw-Bold);
+    font-size: 13px;
+
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-red2-EB);
+    padding: 16px 57px;
+    width: min-content;
+    border-radius: var(--radius-cards_button);
+    transform: translate(0, +50%);
+    transition: 0.3s;
+}
+
+.card-2 a{
+    background-color: var(--color-blue1-07);
+    box-shadow: 5px 10px 14px var(--color-blue2-07a);
+}
+.card-3 a{background-color: var(--color-green-55);}
+
+.card a:hover{
+    transform: scale(1.1) translate(0, +50%);
+    color: var(--color-darkblue);
+}
+.card li:not(.card-1-li:nth-of-type(n+4), .card-2-li:last-of-type)::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../assets/Ckechmark-1.svg");
+    background-size: cover;
+    background-position: center;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.card-1-li:nth-of-type(n+4)::before, .card-2-li:last-of-type::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../assets/Close.svg");
+    background-size: cover;
+    background-position: center;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
