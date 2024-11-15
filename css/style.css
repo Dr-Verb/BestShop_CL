@@ -592,6 +592,8 @@ footer{
     font-family: var(--ff-Ra);
     font-weight: var(--fw-Light);
     font-size: 26px;
+    
+    
 }
 .footer-copy{
     display: block;
@@ -600,6 +602,7 @@ footer{
     font-family: var(--ff-OS);
     font-weight: var(--fw-Regular);
     font-size: 11px;
+    margin-top: 4px;
 }
 .footer-icon-div{
     display: inline-flex;
